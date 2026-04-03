@@ -1,0 +1,52 @@
+.luxury-design-system {
+  /* Color Palette */
+  --color-primary: #EAB167;  /* Primary Color */
+  --color-secondary: #A35D43;  /* Secondary Color */
+  --color-background: #F9F6F0;  /* Background Color */
+  --color-text: #382D25;  /* Text Color */
+  --color-accent: #C69B6F;  /* Accent Color */
+
+  /* Typography */
+  --font-family-heading: 'Playfair Display', serif;
+  --font-family-body: 'Open Sans', sans-serif;
+  --font-size-base: 16px;
+  --font-size-large: 20px;
+  --font-size-small: 14px;
+
+  /* Spacing */
+  --spacing-small: 8px;
+  --spacing-base: 16px;
+  --spacing-large: 32px;
+
+  /* Animations */
+  --animation-ease: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --animation-duration: 0.3s;
+
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+    --font-size-base: 15px;
+  }
+  @media (max-width: 900px) {
+    --font-size-base: 14px;
+  }
+
+  /* Component Styles */
+  .button {
+    background-color: var(--color-primary);
+    color: white;
+    padding: var(--spacing-base);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color var(--animation-duration) var(--animation-ease);
+  }
+  .button:hover {
+    background-color: var(--color-secondary);
+  }
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: var(--spacing-base);
+  }
+}
